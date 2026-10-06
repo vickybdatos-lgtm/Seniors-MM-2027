@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Love & Friendship Carnations 2026 - Resultados</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFF3F6;
+    --ink: #3A0F26;
+    --muted: #7A5266;
+    --line: #EBC9D4;
+    --track: #F6D9E2;
+    --accent: #C4225D;
+    --on-accent: #FFFFFF;
+    --gasto: #6B2A4C;
+    --on-gasto: #FFFFFF;
+    --leaf: #2E6A4E;
+    --petal-1: #F290AE;
+    --petal-2: #DC4E7E;
+    --petal-3: #B12B5E;
+    --petal-4: #7E1B42;
+    --petal-edge: #FFF3F6;
+
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #2A1120;
+      --ink: #FCE8EF;
+      --muted: #CDA6B8;
+      --line: #4F2C3F;
+      --track: #43222F;
+      --accent: #FF7AA4;
+      --on-accent: #2A0C1A;
+      --gasto: #94597A;
+      --on-gasto: #FFFFFF;
+      --leaf: #6FCB9F;
+      --petal-1: #FF9DBB;
+      --petal-2: #F0659A;
+      --petal-3: #C63C72;
+      --petal-4: #8F2450;
+      --petal-edge: #2A1120;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #2A1120;
+    --ink: #FCE8EF;
+    --muted: #CDA6B8;
+    --line: #4F2C3F;
+    --track: #43222F;
+    --accent: #FF7AA4;
+    --on-accent: #2A0C1A;
+    --gasto: #94597A;
+    --on-gasto: #FFFFFF;
+    --leaf: #6FCB9F;
+    --petal-1: #FF9DBB;
+    --petal-2: #F0659A;
+    --petal-3: #C63C72;
+    --petal-4: #8F2450;
+    --petal-edge: #2A1120;
+  }
+
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 20px 72px;
+  }
+
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* Hero */
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 16px;
+  }
+  .event {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+  }
+  h1 {
+    margin: 0;
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+  }
+  h1 .small { display: block; font-size: clamp(1.5rem, 5vw, 2.4rem); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 6px; }
+  h1 .big { display: block; font-size: clamp(2.4rem, 9.6vw, 6rem); font-variant-numeric: tabular-nums; }
+  .sum { margin: 20px 0 0; font-size: 1.1rem; color: var(--muted); max-width: 34ch; }
+  .flower { width: clamp(92px, 22vw, 190px); height: auto; display: block; }
+  .p1 { fill: var(--petal-1); stroke: var(--petal-edge); stroke-width: 0.8; }
+  .p2 { fill: var(--petal-2); stroke: var(--petal-edge); stroke-width: 0.8; }
+  .p3 { fill: var(--petal-3); stroke: var(--petal-edge); stroke-width: 0.8; }
+  .heart { fill: var(--petal-4); }
+  .green { fill: var(--leaf); }
+  .stem { stroke: var(--leaf); fill: none; stroke-width: 6; stroke-linecap: round; }
+
+  /* Split bar */
+  .split-wrap { margin-top: 40px; }
+  .split {
+    display: flex;
+    height: 64px;
+    border-radius: 14px;
+    overflow: hidden;
+    animation: reveal 1.1s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .seg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 16px;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 0;
+  }
+  .seg span { font-size: 0.85rem; font-weight: 400; opacity: 0.9; }
+  .seg b { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.01em; }
+  .seg.gasto { background: var(--gasto); color: var(--on-gasto); flex: 54.4 1 0; }
+  .seg.ganancia { background: var(--accent); color: var(--on-accent); flex: 45.6 1 0; align-items: flex-end; text-align: right; }
+  .split-note { margin: 12px 0 0; color: var(--muted); font-size: 0.98rem; }
+  @keyframes reveal { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+
+  /* Sections */
+  section { margin-top: 68px; }
+  h2 {
+    margin: 0 0 6px;
+    font-size: clamp(1.4rem, 3.4vw, 1.9rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .lede { margin: 0 0 18px; color: var(--muted); max-width: 52ch; }
+
+  .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 16px;
+    padding: 16px 0 14px;
+    border-bottom: 1px solid var(--line);
+    align-items: baseline;
+  }
+  .row .name { font-weight: 600; font-size: 1.05rem; }
+  .row .meta { display: block; font-weight: 400; font-size: 0.9rem; color: var(--muted); }
+  .row .amt { font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; text-align: right; }
+  .row .bar { grid-column: 1 / -1; height: 8px; background: var(--track); border-radius: 99px; overflow: hidden; }
+  .row .bar i { display: block; height: 100%; border-radius: 99px; background: var(--accent); }
+  .rows.out .bar i { background: var(--gasto); }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0 0;
+    font-weight: 800;
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
+  }
+  .total span:first-child { font-weight: 600; font-size: 1.05rem; }
+
+  /* Table */
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; min-width: 540px; border-collapse: collapse; }
+  th, td { padding: 14px 0 14px 16px; text-align: right; border-bottom: 1px solid var(--line); vertical-align: baseline; }
+  th:first-child, td:first-child { text-align: left; padding-left: 0; }
+  thead th { font-size: 0.9rem; font-weight: 600; color: var(--muted); border-bottom: 1px solid var(--ink); }
+  tbody td:first-child { font-weight: 600; }
+  tbody td:first-child small { display: block; font-weight: 400; color: var(--muted); font-size: 0.86rem; }
+  td.gain { font-weight: 800; }
+  td.neg { color: var(--gasto); font-weight: 800; }
+  tfoot td { font-weight: 800; font-size: 1.1rem; border-bottom: 0; border-top: 2px solid var(--ink); }
+  tfoot td.gain { color: var(--accent); }
+
+  /* Facts */
+  .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 8px 0 0; border-top: 1px solid var(--line); }
+  .fact { padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .fact:nth-child(odd) { padding-right: 16px; }
+  .fact:nth-child(even) { padding-left: 16px; border-left: 1px solid var(--line); }
+  .fact dt { color: var(--muted); font-size: 0.95rem; }
+  .fact dd { margin: 2px 0 0; font-size: clamp(1.9rem, 6vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .fact dd small { display: block; margin-top: 4px; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; color: var(--muted); }
+  @media (min-width: 720px) {
+    .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .fact { border-bottom: 1px solid var(--line); padding: 20px 16px; }
+    .fact:nth-child(odd), .fact:nth-child(even) { padding: 20px 16px; }
+    .fact:first-child { padding-left: 0; }
+    .fact:nth-child(even) { border-left: 1px solid var(--line); }
+    .fact:nth-child(3) { border-left: 1px solid var(--line); }
+  }
+
+  .notes { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .notes li { padding: 14px 0; border-bottom: 1px solid var(--line); color: var(--muted); max-width: 66ch; }
+  .notes b { color: var(--ink); font-weight: 600; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .split { animation: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="hero">
+    <div>
+      <p class="event">Love &amp; Friendship Carnations 2026</p>
+      <h1>
+        <span class="small">Quedaron</span>
+        <span class="big">$2.185.000</span>
+      </h1>
+      <p class="sum">Entraron $4.792.000 y se gastaron $2.607.000.</p>
+    </div>
+
+    <svg class="flower" viewBox="0 0 220 340" role="img" aria-label="Un clavel rosado">
+      <defs>
+        <path id="petal" d="M0 0 C-10 -14 -16 -30 -16 -44 l2.67 -6 l2.67 6 l2.67 -6 l2.67 6 l2.67 -6 l2.67 6 l2.67 -6 l2.67 6 l2.67 -6 l2.67 6 l2.67 -6 l2.67 6 C16 -30 10 -14 0 0Z"/>
+      </defs>
+      <path class="stem" d="M110 150 C108 210 120 272 104 336"/>
+      <path class="green" d="M108 252 C70 242 50 212 46 190 C84 196 104 222 108 252Z"/>
+      <path class="green" d="M112 284 C150 276 172 250 178 226 C138 232 116 256 112 284Z"/>
+      <ellipse class="green" cx="110" cy="160" rx="20" ry="13"/>
+      <g transform="translate(110 112)">
+        <use href="#petal" class="p1" transform="rotate(0) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(36) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(72) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(108) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(144) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(180) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(216) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(252) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(288) scale(1.2)"/>
+        <use href="#petal" class="p1" transform="rotate(324) scale(1.2)"/>
+        <use href="#petal" class="p2" transform="rotate(22.5) scale(0.88)"/>
+        <use href="#petal" class="p2" transform="rotate(67.5) scale(0.88)"/>
+        <use href="#petal" class="p2" transform="rotate(112.5) scale(0.88)"/>
+        <use href="#petal" class="p2" transform="rotate(157.5) scale(0.88)"/>
+        <use href="#petal" class="p2" transform="rotate(202.5) scale(0.88)"/>
+        <use href="#petal" class="p2" transform="rotate(247.5) scale(0.88)"/>
+        <use href="#petal" class="p2" transform="rotate(292.5) scale(0.88)"/>
+        <use href="#petal" class="p2" transform="rotate(337.5) scale(0.88)"/>
+        <use href="#petal" class="p3" transform="rotate(0) scale(0.54)"/>
+        <use href="#petal" class="p3" transform="rotate(60) scale(0.54)"/>
+        <use href="#petal" class="p3" transform="rotate(120) scale(0.54)"/>
+        <use href="#petal" class="p3" transform="rotate(180) scale(0.54)"/>
+        <use href="#petal" class="p3" transform="rotate(240) scale(0.54)"/>
+        <use href="#petal" class="p3" transform="rotate(300) scale(0.54)"/>
+        <circle class="heart" r="5"/>
+      </g>
+    </svg>
+  </header>
+
+  <div class="split-wrap">
+    <div class="split" role="img" aria-label="De cada 100 pesos que entraron, 54,4 se gastaron y 45,6 quedaron de ganancia">
+      <div class="seg gasto num"><span>Gastos</span><b>$2.607.000</b></div>
+      <div class="seg ganancia num"><span>Ganancia</span><b>$2.185.000</b></div>
+    </div>
+    <p class="split-note">De cada $100 que entraron, se gastaron $54,4 y quedaron $45,6.</p>
+  </div>
+
+  <section>
+    <h2>Lo que entró</h2>
+    <p class="lede">Pedidos del formulario, por producto.</p>
+    <ul class="rows">
+      <li class="row">
+        <span class="name">Claveles <span class="meta">1.532 claveles, 81,5% del total</span></span>
+        <span class="amt num">$3.904.000</span>
+        <span class="bar"><i style="width:81.5%"></i></span>
+      </li>
+      <li class="row">
+        <span class="name">Galletas <span class="meta">60 galletas, 16,3% del total</span></span>
+        <span class="amt num">$780.000</span>
+        <span class="bar"><i style="width:16.3%"></i></span>
+      </li>
+      <li class="row">
+        <span class="name">Cartas <span class="meta">36 cartas, 2,2% del total</span></span>
+        <span class="amt num">$108.000</span>
+        <span class="bar"><i style="width:2.2%"></i></span>
+      </li>
+    </ul>
+    <div class="total num"><span>Total que entró</span><span>$4.792.000</span></div>
+  </section>
+
+  <section>
+    <h2>En qué se fue</h2>
+    <p class="lede">Los cinco gastos de la venta.</p>
+    <ul class="rows out">
+      <li class="row">
+        <span class="name">Flores <span class="meta">68,9% de los gastos</span></span>
+        <span class="amt num">$1.795.000</span>
+        <span class="bar"><i style="width:68.9%"></i></span>
+      </li>
+      <li class="row">
+        <span class="name">Galletas <span class="meta">20,7% de los gastos</span></span>
+        <span class="amt num">$540.000</span>
+        <span class="bar"><i style="width:20.7%"></i></span>
+      </li>
+      <li class="row">
+        <span class="name">Galletas para actividad <span class="meta">5,1% de los gastos</span></span>
+        <span class="amt num">$132.000</span>
+        <span class="bar"><i style="width:5.1%"></i></span>
+      </li>
+      <li class="row">
+        <span class="name">Transporte <span class="meta">3,8% de los gastos</span></span>
+        <span class="amt num">$100.000</span>
+        <span class="bar"><i style="width:3.8%"></i></span>
+      </li>
+      <li class="row">
+        <span class="name">Empaque, tags e hilo <span class="meta">1,5% de los gastos</span></span>
+        <span class="amt num">$40.000</span>
+        <span class="bar"><i style="width:1.5%"></i></span>
+      </li>
+    </ul>
+    <div class="total num"><span>Total gastado</span><span>$2.607.000</span></div>
+  </section>
+
+  <section>
+    <h2>Qué dejó cada cosa</h2>
+    <p class="lede">Lo vendido menos lo que costó, producto por producto.</p>
+    <div class="scroll">
+      <table class="num">
+        <caption class="sr" style="position:absolute;left:-9999px">Ganancia por producto</caption>
+        <thead>
+          <tr><th scope="col">Producto</th><th scope="col">Vendido</th><th scope="col">Costó</th><th scope="col">Dejó</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Claveles</td><td>$3.904.000</td><td>$1.795.000</td><td class="gain">$2.109.000</td></tr>
+          <tr><td>Galletas</td><td>$780.000</td><td>$540.000</td><td class="gain">$240.000</td></tr>
+          <tr><td>Cartas</td><td>$108.000</td><td>-</td><td class="gain">$108.000</td></tr>
+          <tr><td>Gastos generales<small>Transporte, galletas para actividad y empaque</small></td><td>-</td><td>$272.000</td><td class="neg">-$272.000</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total</td><td>$4.792.000</td><td>$2.607.000</td><td class="gain">$2.185.000</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>La venta en números</h2>
+    <dl class="facts">
+      <div class="fact"><dt>Pedidos</dt><dd>867</dd></div>
+      <div class="fact"><dt>Claveles</dt><dd>1.532</dd></div>
+      <div class="fact"><dt>Galletas</dt><dd>60<small>44 Chocolate Chip, 16 Red Velvet</small></dd></div>
+      <div class="fact"><dt>Cartas</dt><dd>36</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Para tener en cuenta</h2>
+    <ul class="notes">
+      <li><b>Cómo se cobró.</b> Cada 3 claveles costaron $6.000 y cada clavel suelto $3.500. Un pedido de 10 claveles, por ejemplo, fueron $21.500.</li>
+      <li><b>Galletas para actividad.</b> Si esos $132.000 no cuentan como gasto de esta venta, la ganancia sube a $2.317.000.</li>
+    </ul>
+  </section>
+
+</main>
+</body>
+</html>
